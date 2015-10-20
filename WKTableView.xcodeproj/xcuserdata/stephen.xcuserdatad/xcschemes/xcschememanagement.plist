@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Glance - WKTableViewWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Notification - WKTableViewWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>WKTableView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>WKTableViewWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>DCAD6BEE1BD60A9D00D5A7FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCAD6C031BD6B8FC00D5A7FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

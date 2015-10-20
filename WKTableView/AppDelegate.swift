@@ -13,6 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: ([NSObject : AnyObject]?) -> Void) {
+        let navController = window?.rootViewController as! UINavigationController
+        let tableVieController = navController.viewControllers[0] as! TableViewController
+        let tableData = tableVieController.getTVData()
+        
+        reply(tableData)
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

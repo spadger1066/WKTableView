@@ -13,6 +13,15 @@
 		DCAD6BE61BD60A9D00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6BE51BD60A9D00D5A7FB /* Assets.xcassets */; };
 		DCAD6BE91BD60A9D00D5A7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6BE71BD60A9D00D5A7FB /* LaunchScreen.storyboard */; };
 		DCAD6BF41BD60A9D00D5A7FB /* WKTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6BF31BD60A9D00D5A7FB /* WKTableViewTests.swift */; };
+		DCAD6C011BD6B1BB00D5A7FB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6C001BD6B1BB00D5A7FB /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DCAD6C081BD6B8FC00D5A7FB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6C061BD6B8FC00D5A7FB /* Interface.storyboard */; };
+		DCAD6C0A1BD6B8FC00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6C091BD6B8FC00D5A7FB /* Assets.xcassets */; };
+		DCAD6C111BD6B8FC00D5A7FB /* WKTableViewWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCAD6C101BD6B8FC00D5A7FB /* WKTableViewWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCAD6C181BD6B8FC00D5A7FB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6C171BD6B8FC00D5A7FB /* InterfaceController.swift */; };
+		DCAD6C1A1BD6B8FC00D5A7FB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6C191BD6B8FC00D5A7FB /* ExtensionDelegate.swift */; };
+		DCAD6C1C1BD6B8FC00D5A7FB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6C1B1BD6B8FC00D5A7FB /* NotificationController.swift */; };
+		DCAD6C1E1BD6B8FC00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6C1D1BD6B8FC00D5A7FB /* Assets.xcassets */; };
+		DCAD6C221BD6B8FC00D5A7FB /* WKTableViewWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCAD6C041BD6B8FC00D5A7FB /* WKTableViewWatch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +32,46 @@
 			remoteGlobalIDString = DCAD6BDA1BD60A9D00D5A7FB;
 			remoteInfo = WKTableView;
 		};
+		DCAD6C121BD6B8FC00D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD6BD31BD60A9D00D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD6C0F1BD6B8FC00D5A7FB;
+			remoteInfo = "WKTableViewWatch Extension";
+		};
+		DCAD6C201BD6B8FC00D5A7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAD6BD31BD60A9D00D5A7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAD6C031BD6B8FC00D5A7FB;
+			remoteInfo = WKTableViewWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCAD6C261BD6B8FC00D5A7FB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCAD6C111BD6B8FC00D5A7FB /* WKTableViewWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD6C2A1BD6B8FC00D5A7FB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCAD6C221BD6B8FC00D5A7FB /* WKTableViewWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DCAD6BDB1BD60A9D00D5A7FB /* WKTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +84,18 @@
 		DCAD6BEF1BD60A9D00D5A7FB /* WKTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAD6BF31BD60A9D00D5A7FB /* WKTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKTableViewTests.swift; sourceTree = "<group>"; };
 		DCAD6BF51BD60A9D00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD6C001BD6B1BB00D5A7FB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DCAD6C041BD6B8FC00D5A7FB /* WKTableViewWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKTableViewWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD6C071BD6B8FC00D5A7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DCAD6C091BD6B8FC00D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD6C0B1BD6B8FC00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD6C101BD6B8FC00D5A7FB /* WKTableViewWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WKTableViewWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD6C161BD6B8FC00D5A7FB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DCAD6C171BD6B8FC00D5A7FB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DCAD6C191BD6B8FC00D5A7FB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DCAD6C1B1BD6B8FC00D5A7FB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DCAD6C1D1BD6B8FC00D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD6C1F1BD6B8FC00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD6C0D1BD6B8FC00D5A7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +128,8 @@
 			children = (
 				DCAD6BDD1BD60A9D00D5A7FB /* WKTableView */,
 				DCAD6BF21BD60A9D00D5A7FB /* WKTableViewTests */,
+				DCAD6C051BD6B8FC00D5A7FB /* WKTableViewWatch */,
+				DCAD6C141BD6B8FC00D5A7FB /* WKTableViewWatch Extension */,
 				DCAD6BDC1BD60A9D00D5A7FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +139,8 @@
 			children = (
 				DCAD6BDB1BD60A9D00D5A7FB /* WKTableView.app */,
 				DCAD6BEF1BD60A9D00D5A7FB /* WKTableViewTests.xctest */,
+				DCAD6C041BD6B8FC00D5A7FB /* WKTableViewWatch.app */,
+				DCAD6C101BD6B8FC00D5A7FB /* WKTableViewWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +151,7 @@
 				DCAD6BDE1BD60A9D00D5A7FB /* AppDelegate.swift */,
 				DCAD6BE01BD60A9D00D5A7FB /* ViewController.swift */,
 				DCAD6BE21BD60A9D00D5A7FB /* Main.storyboard */,
+				DCAD6C001BD6B1BB00D5A7FB /* TableViewController.swift */,
 				DCAD6BE51BD60A9D00D5A7FB /* Assets.xcassets */,
 				DCAD6BE71BD60A9D00D5A7FB /* LaunchScreen.storyboard */,
 				DCAD6BEA1BD60A9D00D5A7FB /* Info.plist */,
@@ -96,6 +168,37 @@
 			path = WKTableViewTests;
 			sourceTree = "<group>";
 		};
+		DCAD6C051BD6B8FC00D5A7FB /* WKTableViewWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD6C061BD6B8FC00D5A7FB /* Interface.storyboard */,
+				DCAD6C091BD6B8FC00D5A7FB /* Assets.xcassets */,
+				DCAD6C0B1BD6B8FC00D5A7FB /* Info.plist */,
+			);
+			path = WKTableViewWatch;
+			sourceTree = "<group>";
+		};
+		DCAD6C141BD6B8FC00D5A7FB /* WKTableViewWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD6C171BD6B8FC00D5A7FB /* InterfaceController.swift */,
+				DCAD6C191BD6B8FC00D5A7FB /* ExtensionDelegate.swift */,
+				DCAD6C1B1BD6B8FC00D5A7FB /* NotificationController.swift */,
+				DCAD6C1D1BD6B8FC00D5A7FB /* Assets.xcassets */,
+				DCAD6C1F1BD6B8FC00D5A7FB /* Info.plist */,
+				DCAD6C151BD6B8FC00D5A7FB /* Supporting Files */,
+			);
+			path = "WKTableViewWatch Extension";
+			sourceTree = "<group>";
+		};
+		DCAD6C151BD6B8FC00D5A7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD6C161BD6B8FC00D5A7FB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +209,12 @@
 				DCAD6BD71BD60A9D00D5A7FB /* Sources */,
 				DCAD6BD81BD60A9D00D5A7FB /* Frameworks */,
 				DCAD6BD91BD60A9D00D5A7FB /* Resources */,
+				DCAD6C2A1BD6B8FC00D5A7FB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCAD6C211BD6B8FC00D5A7FB /* PBXTargetDependency */,
 			);
 			name = WKTableView;
 			productName = WKTableView;
@@ -134,6 +239,40 @@
 			productReference = DCAD6BEF1BD60A9D00D5A7FB /* WKTableViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DCAD6C031BD6B8FC00D5A7FB /* WKTableViewWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD6C271BD6B8FC00D5A7FB /* Build configuration list for PBXNativeTarget "WKTableViewWatch" */;
+			buildPhases = (
+				DCAD6C021BD6B8FC00D5A7FB /* Resources */,
+				DCAD6C261BD6B8FC00D5A7FB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAD6C131BD6B8FC00D5A7FB /* PBXTargetDependency */,
+			);
+			name = WKTableViewWatch;
+			productName = WKTableViewWatch;
+			productReference = DCAD6C041BD6B8FC00D5A7FB /* WKTableViewWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DCAD6C0F1BD6B8FC00D5A7FB /* WKTableViewWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD6C231BD6B8FC00D5A7FB /* Build configuration list for PBXNativeTarget "WKTableViewWatch Extension" */;
+			buildPhases = (
+				DCAD6C0C1BD6B8FC00D5A7FB /* Sources */,
+				DCAD6C0D1BD6B8FC00D5A7FB /* Frameworks */,
+				DCAD6C0E1BD6B8FC00D5A7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WKTableViewWatch Extension";
+			productName = "WKTableViewWatch Extension";
+			productReference = DCAD6C101BD6B8FC00D5A7FB /* WKTableViewWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,10 +284,18 @@
 				TargetAttributes = {
 					DCAD6BDA1BD60A9D00D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
 					};
 					DCAD6BEE1BD60A9D00D5A7FB = {
 						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = DCAD6BDA1BD60A9D00D5A7FB;
+					};
+					DCAD6C031BD6B8FC00D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = W2L76H8G3Y;
+					};
+					DCAD6C0F1BD6B8FC00D5A7FB = {
+						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
 			};
@@ -167,6 +314,8 @@
 			targets = (
 				DCAD6BDA1BD60A9D00D5A7FB /* WKTableView */,
 				DCAD6BEE1BD60A9D00D5A7FB /* WKTableViewTests */,
+				DCAD6C031BD6B8FC00D5A7FB /* WKTableViewWatch */,
+				DCAD6C0F1BD6B8FC00D5A7FB /* WKTableViewWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +338,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD6C021BD6B8FC00D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD6C0A1BD6B8FC00D5A7FB /* Assets.xcassets in Resources */,
+				DCAD6C081BD6B8FC00D5A7FB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAD6C0E1BD6B8FC00D5A7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD6C1E1BD6B8FC00D5A7FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -197,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAD6BE11BD60A9D00D5A7FB /* ViewController.swift in Sources */,
+				DCAD6C011BD6B1BB00D5A7FB /* TableViewController.swift in Sources */,
 				DCAD6BDF1BD60A9D00D5A7FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +376,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCAD6C0C1BD6B8FC00D5A7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD6C1C1BD6B8FC00D5A7FB /* NotificationController.swift in Sources */,
+				DCAD6C1A1BD6B8FC00D5A7FB /* ExtensionDelegate.swift in Sources */,
+				DCAD6C181BD6B8FC00D5A7FB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -216,6 +393,16 @@
 			isa = PBXTargetDependency;
 			target = DCAD6BDA1BD60A9D00D5A7FB /* WKTableView */;
 			targetProxy = DCAD6BF01BD60A9D00D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD6C131BD6B8FC00D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD6C0F1BD6B8FC00D5A7FB /* WKTableViewWatch Extension */;
+			targetProxy = DCAD6C121BD6B8FC00D5A7FB /* PBXContainerItemProxy */;
+		};
+		DCAD6C211BD6B8FC00D5A7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAD6C031BD6B8FC00D5A7FB /* WKTableViewWatch */;
+			targetProxy = DCAD6C201BD6B8FC00D5A7FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -234,6 +421,14 @@
 				DCAD6BE81BD60A9D00D5A7FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCAD6C061BD6B8FC00D5A7FB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAD6C071BD6B8FC00D5A7FB /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKTableView;
@@ -335,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WKTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKTableView;
@@ -366,6 +563,68 @@
 			};
 			name = Release;
 		};
+		DCAD6C241BD6B8FC00D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WKTableViewWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKTableView.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD6C251BD6B8FC00D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WKTableViewWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKTableView.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DCAD6C281BD6B8FC00D5A7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKTableViewWatch_Extension;
+				INFOPLIST_FILE = WKTableViewWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKTableView.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		DCAD6C291BD6B8FC00D5A7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WKTableViewWatch_Extension;
+				INFOPLIST_FILE = WKTableViewWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.technology.luminator.WKTableView.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +650,22 @@
 			buildConfigurations = (
 				DCAD6BFC1BD60A9D00D5A7FB /* Debug */,
 				DCAD6BFD1BD60A9D00D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD6C231BD6B8FC00D5A7FB /* Build configuration list for PBXNativeTarget "WKTableViewWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD6C241BD6B8FC00D5A7FB /* Debug */,
+				DCAD6C251BD6B8FC00D5A7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAD6C271BD6B8FC00D5A7FB /* Build configuration list for PBXNativeTarget "WKTableViewWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD6C281BD6B8FC00D5A7FB /* Debug */,
+				DCAD6C291BD6B8FC00D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
