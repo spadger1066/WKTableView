@@ -22,6 +22,7 @@
 		DCAD6C1C1BD6B8FC00D5A7FB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6C1B1BD6B8FC00D5A7FB /* NotificationController.swift */; };
 		DCAD6C1E1BD6B8FC00D5A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD6C1D1BD6B8FC00D5A7FB /* Assets.xcassets */; };
 		DCAD6C221BD6B8FC00D5A7FB /* WKTableViewWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCAD6C041BD6B8FC00D5A7FB /* WKTableViewWatch.app */; };
+		DCAD6C2C1BD75ACF00D5A7FB /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD6C2B1BD75ACF00D5A7FB /* TableRow.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		DCAD6C1B1BD6B8FC00D5A7FB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		DCAD6C1D1BD6B8FC00D5A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCAD6C1F1BD6B8FC00D5A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD6C2B1BD75ACF00D5A7FB /* TableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			children = (
 				DCAD6C171BD6B8FC00D5A7FB /* InterfaceController.swift */,
 				DCAD6C191BD6B8FC00D5A7FB /* ExtensionDelegate.swift */,
+				DCAD6C2B1BD75ACF00D5A7FB /* TableRow.swift */,
 				DCAD6C1B1BD6B8FC00D5A7FB /* NotificationController.swift */,
 				DCAD6C1D1BD6B8FC00D5A7FB /* Assets.xcassets */,
 				DCAD6C1F1BD6B8FC00D5A7FB /* Info.plist */,
@@ -381,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAD6C1C1BD6B8FC00D5A7FB /* NotificationController.swift in Sources */,
+				DCAD6C2C1BD75ACF00D5A7FB /* TableRow.swift in Sources */,
 				DCAD6C1A1BD6B8FC00D5A7FB /* ExtensionDelegate.swift in Sources */,
 				DCAD6C181BD6B8FC00D5A7FB /* InterfaceController.swift in Sources */,
 			);
@@ -644,6 +648,7 @@
 				DCAD6BFA1BD60A9D00D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCAD6BFB1BD60A9D00D5A7FB /* Build configuration list for PBXNativeTarget "WKTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -652,6 +657,7 @@
 				DCAD6BFD1BD60A9D00D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCAD6C231BD6B8FC00D5A7FB /* Build configuration list for PBXNativeTarget "WKTableViewWatch Extension" */ = {
 			isa = XCConfigurationList;
@@ -660,6 +666,7 @@
 				DCAD6C251BD6B8FC00D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCAD6C271BD6B8FC00D5A7FB /* Build configuration list for PBXNativeTarget "WKTableViewWatch" */ = {
 			isa = XCConfigurationList;
@@ -668,6 +675,7 @@
 				DCAD6C291BD6B8FC00D5A7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

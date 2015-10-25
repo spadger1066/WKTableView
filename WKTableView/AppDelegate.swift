@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
 
@@ -23,7 +24,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if (WCSession.isSupported()){
+            let session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+            
+            if session.paired != true {
+                print("Apple watch is not paired")
+            }
+            
+            if session.watchAppInstalled != true {
+                print("WatchConnectivity is not supported on this device")
+            }
+        }
         return true
+    }
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        let navController = window?.rootViewController as! UINavigationController
+        let tableViewController = navController.viewControllers[0] as! TableViewController
+        let tableData = tableViewController.getTVData()
+        
+        replyHandler(tableData)
+
     }
 
     func applicationWillResignActive(application: UIApplication) {
